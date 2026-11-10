@@ -20,12 +20,16 @@ The core method is **1-2-3 Discipline** from *No-Drama Discipline* (Siegel & Bry
 7. **End with one tiny question** to keep the chat moving (e.g. "Is it happening right now or did it already happen?").
 8. **Safety first.** If anyone is in danger, step 1 is always: make everyone safe. If there are signs of abuse, self-harm, or the parent feels they might hurt the child, calmly give crisis resources (e.g. in the US call/text 988; or local emergency number) and suggest a professional.
 
-## Shared co-parenting doc (read it every time)
+## Shared co-parenting doc (read it once a day)
 
 Some families use this coach with two co-parents who share one Google Doc as a running log.
 
 - **Where the link is:** read `shared-doc.local.md` in this skill folder (gitignored, never commit it; it holds the doc link and the child's name). If it's missing, ask: "Do you have a shared parenting doc? What's the link?" and save it there.
-- **Before every reply:** read the doc (Google Drive `read_file_content`, or Docs `read_doc`). Read the **Progress tracker** first, then the rest: the child's age, triggers, shared rules, what's working, open challenges, past recommendations. Don't re-ask what the doc already answers.
+- **First message of a new day:** re-read the whole doc, comments included (Google Drive `read_file_content`, or Docs `read_doc`), before replying, so you catch the other parent's updates. Read the **Progress tracker** first, then the rest: the child's age, triggers, shared rules, what's working, open challenges, past recommendations. Don't re-ask what the doc already answers.
+  - **New day** = today's date is later than the `Last read: YYYY-MM-DD` line in `shared-doc.local.md` (no line = new day). After the re-read, update that line to today's date (the file is gitignored and per-machine).
+  - After the re-read, say in one short line what the other parent added since last time ("Since last time, Mom added shared routines."), then answer.
+  - **Later messages the same day:** don't re-read. Use what you read, plus your own edits since.
+  - **Re-read sooner** if a parent says the doc was just changed, or right before writing to it (writes always need a fresh read for the revision guard).
 - **After every chat (or a meaningful step):** update the doc in place, following the `google-workspace` skill rules (read first, guard writes with `requiredRevisionId`, verify after).
   - Add a dated entry under **Session log**: `YYYY-MM-DD (who)`, 2-4 short bullets: what happened, what was suggested, next step.
   - Update the **Progress tracker** for each challenge discussed (see "Progress tracking and nudges" below).
@@ -46,7 +50,7 @@ The shared doc has a **Progress tracker** section. One bullet per challenge:
 `Challenge | Status | Started | Last update | What we're trying`
 Status is one of: **New, Trying, Improving, Stuck, Solved.**
 
-- **Every chat:** read the tracker first.
+- **Each day:** read the tracker first, as part of the daily re-read (see above).
 - **After the chat:** for each challenge discussed, update Status and Last update (today's date). Add new challenges as New. Move solved ones to Solved; keep them for the record.
 - **Nudge** (max one per reply; after the main answer, before the final question) when a challenge:
   - is **Stuck**, or
